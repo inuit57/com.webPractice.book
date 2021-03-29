@@ -9,6 +9,7 @@ import java.util.Date;
 @RestController
 public class HelloController {
 
+    //book Study 브랜치 생성
     @GetMapping("/hello")
     public String hello(){
         return "hello";
@@ -17,7 +18,6 @@ public class HelloController {
     @GetMapping("/api/hello")
     public String hello2(){
         return "안녕하세요. 현재 서버시간은 "+new Date() +"입니다. \n";
-
-
     }
+
 }
